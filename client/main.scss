@@ -1,0 +1,32 @@
+/* CSS declarations go here */
+@import '{zurb:foundation-sites}/scss/foundation';
+@include foundation-everything;
+
+.fest{
+  list-style-type: none;
+  margin: 0 auto;
+  text-align: center;
+  li{
+    position: relative;
+    display: inline-block;
+    width: 24%;
+    max-height: 200px;
+    overflow: hidden;
+    margin: 0 5px;
+    &.remove{
+      opacity:.4;
+    }
+    img{
+      width: 100%;
+    }
+    h6{
+      position: absolute;
+      width: 100%;
+      margin: 0;
+      padding:5px;
+      background: rgba(0,0,0,.2);
+      bottom: 0;
+      color:white;
+    }
+  }
+}
